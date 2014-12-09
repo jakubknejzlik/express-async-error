@@ -19,7 +19,7 @@ All you need to do is add handler like this:
 
     app.listen(...)
 
-### Arguments
+__Arguments__
 
 - `options`:
     - ``domainPropertyName``: name of property to assign created domain (default: _domain)
