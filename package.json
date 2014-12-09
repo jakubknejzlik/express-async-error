@@ -1,6 +1,10 @@
 {
+    "version":"0.0.1",
+    "description":"expressjs asynchronous error handler",
+    "keywords":"expressjs,async,asynchronous,error,handling,domain",
     "devDependencies":{
         "express":"x",
         "request":"x"
-    }
+    },
+    "repository":"https://github.com/jakubknejzlik/express-async-error.git"
 }
