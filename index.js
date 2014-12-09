@@ -1,11 +1,18 @@
 var domain = require('domain');
 
-module.exports.Handler = function(req,res,next){
-    var d = domain.create();
+module.exports.Handler = function(options){
+    options = options || {};
+    return function(req,res,next){
+        var d = domain.create();
 
-    d.on('error',next)
+        req[options.domainPropertyName || '_domain'] = d;
 
-    d.run(function(){
-        next();
-    })
+        d.on('error',function(err){
+            next(err)
+        })
+
+        d.run(function(){
+            next();
+        })
+    }
 }

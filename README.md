@@ -13,10 +13,20 @@ All you need to do is add handler like this:
 
     var app = new express()
 
-    app.use(errorHandler)
+    app.use(errorHandler([options]))
 
     ...
 
     app.listen(...)
 
+### Arguments
+
+- `options`:
+    - ``domainPropertyName``: name of property to assign created domain (default: _domain)
+
+
 See tests for complete usage example.
+
+
+### TODO
+ - subdomain support
