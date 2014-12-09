@@ -1,4 +1,5 @@
 {
+    "name":"express-async-error",
     "version":"0.0.1",
     "description":"expressjs asynchronous error handler",
     "keywords":"expressjs,async,asynchronous,error,handling,domain",
